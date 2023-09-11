@@ -1,3 +1,4 @@
+import "normalize.css/normalize.css"
 import "./globals.css"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
