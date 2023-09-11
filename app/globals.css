@@ -1,9 +1,33 @@
+:root {
+  --dark: #03030a;
+  --darker-gray: #16161d;
+  --dark-gray: #202027;
+  --gray: #404047;
+  --light-gray: #606067;
+  --lighter-gray: #f0f0f7;
+  --light: #f6f6fd;
+  --red: #ff0064;
+  --dark-pink: #ff1d96;
+  --pink: #ff82ff;
+  --peach: #ff6573;
+  --orange: #ff8807;
+  --yellow: #eeff00;
+  --green: #00ff00;
+  --light-green: #9ffcbb;
+  --dark-blue: #0969f9;
+  --blue: #168eff;
+  --light-blue: #00e0ff;
+  --aqua: #00ffe5;
+  --dark-purple: #9a2dff;
+  --purple: #ef1fff;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #f0f0f7;
-  color: #16161d;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 h1,
@@ -11,6 +35,6 @@ h2,
 h3,
 h4,
 h5 {
-  color: slategray;
+  color: var(--red);
   font-weight: 600;
 }
