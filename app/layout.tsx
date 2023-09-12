@@ -1,12 +1,29 @@
 import "normalize.css/normalize.css"
 import "./globals.css"
+import Navbar from "./components/navbar"
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   )
 }
 
-export default Layout
+// const Layout = ({ children }: { children: React.ReactNode }) => {
+//   return (
+//     <html lang="en">
+//       <body>
+//         <Navbar />
+//         <main>{children}</main>
+//       </body>
+//     </html>
+//   )
+// }
