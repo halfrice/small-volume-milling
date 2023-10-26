@@ -97,7 +97,7 @@ const HomePage = () => {
         </a>
       </div>
 
-      <div className="mt-64"></div>
+      {/* <div className="mt-64"></div> */}
     </main>
   )
 }
