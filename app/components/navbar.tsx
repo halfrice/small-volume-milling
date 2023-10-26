@@ -18,10 +18,10 @@ const routes = [
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-col items-center justify-between h-12 px-6">
-      <div className="flex items-start max-w-5xl w-full h-full font-mono text-md border-b border-[--dark-gray]">
+    <nav className="fixed top-0 left-0 flex flex-col items-center justify-between w-full h-12 backdrop-blur-xl backdrop-saturate-180 z-100">
+      <div className="flex items-start justify-center lg:justify-start max-w-5xl w-full h-full text-md border-b border-[--dark-gray]">
         <div className="flex items-center space-x-6 h-full">
-          <Link href="/">
+          <Link href="/" className="">
             <Image
               src="/svm-logo.svg"
               alt="SVM Logo"
@@ -32,7 +32,7 @@ const Navbar = () => {
             />
           </Link>
           {routes.map(({ name, route }, i) => (
-            <Link href={route} key={i}>
+            <Link href={route} key={i} className="hover:underline">
               <span>{name}</span>
             </Link>
           ))}
