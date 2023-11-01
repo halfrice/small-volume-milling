@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col w-full min-w-full min-h-screen items-center justify-between">
+    <section className="flex flex-col w-full min-w-full min-h-screen items-center justify-between px-4 lg:px-0">
       <div className="flex flex-col items-center lg:items-start max-w-5xl w-full mt-20">
         <a
           className="flex place-items-center"
@@ -54,7 +54,7 @@ const HomePage = () => {
               -&gt;
             </span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className="m-0 max-w-[30ch] text-sm lg:text-base opacity-50">
             Minim tempor duis elit ut eu dolor ullamco dolore ad quis. Lorem do
             adipisicing Lorem consequat commodo ut.
           </p>
@@ -72,7 +72,7 @@ const HomePage = () => {
               -&gt;
             </span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className="m-0 max-w-[30ch] text-sm lg:text-base opacity-50">
             Tempor nisi proident dolor consequat cupidatat velit commodo non sit
             labore ex veniam commodo veniam.
           </p>
@@ -90,7 +90,7 @@ const HomePage = () => {
               -&gt;
             </span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className="m-0 max-w-[30ch] text-sm lg:text-base opacity-50">
             Cupidatat do dolore exercitation dolore sunt velit minim nisi
             reprehenderit esse.
           </p>
@@ -98,7 +98,7 @@ const HomePage = () => {
       </div>
 
       {/* <div className="mt-64"></div> */}
-    </main>
+    </section>
   )
 }
 

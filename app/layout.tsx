@@ -1,8 +1,8 @@
 // import "normalize.css/normalize.css"
 import { Montserrat, Inter } from "next/font/google"
 import "./globals.css"
-import Navbar from "./components/navbar"
-import Footer from "./components/footer"
+import Navbar from "./_components/navbar"
+import Footer from "./_components/footer"
 
 const montserrat = Montserrat({ subsets: ["latin"] })
 const inter = Inter({ subsets: ["latin"] })
@@ -13,7 +13,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       {/* <body className={montserrat.className}> */}
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
