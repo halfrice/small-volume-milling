@@ -10,7 +10,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h1 className="text-2xl lg:text-3xl text-[--dark-blue]">
+          <h1 className="text-2xl lg:text-3xl text-[--blue]">
             Small Volume Milling
           </h1>
         </a>
@@ -30,9 +30,9 @@ const HomePage = () => {
           priority
         />
       </div> */}
-      <div className="flex place-items-center relative mt-8 px-0 max-w-5xl aspect-video overflow-hidden rounded-sm z-[-1]">
+      <div className="flex place-items-center relative mt-0 lg:mt-8 px-0 max-w-5xl aspect-video overflow-hidden rounded-sm z-[-1]">
         <Image
-          className="-translate-y-6 lg:-translate-y-20"
+          className="-translate-y-8 lg:-translate-y-20"
           src="/bg.jpg"
           alt="SVM Background"
           width={1024}
@@ -41,14 +41,14 @@ const HomePage = () => {
         />
       </div>
 
-      <div className="grid lg:grid-cols-3 text-center lg:text-left lg:max-w-5xl lg:w-full mt-8">
+      <div className="grid lg:grid-cols-3 text-center lg:text-left lg:max-w-5xl lg:w-full mt-0 lg:mt-8">
         <a
           href=""
           className="group rounded-lg border border-transparent px-4 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Design{" "}
             <span className="inline-block pl-1 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -66,7 +66,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Prototype{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -84,7 +84,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Build{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;

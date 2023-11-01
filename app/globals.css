@@ -3,35 +3,70 @@
 @tailwind utilities;
 
 :root {
+  --night: #1a1b26;
+  --storm: #24283b;
+  --terminal-black: #414868;
+  --comments: #565f89;
+  --text: #9aa5ce;
+  --foreground: #a9b1d6;
+  --vars: #c0caf5;
+  --params: #cfc9c2;
+  --purple: #bb9af7;
+  --blue: #7aa2f7;
+  --aqua: #7dcfff;
+  --seal-blue: #2ac3de;
+  --light-bleen: #b4f9f8;
+  --bleen: #73daca;
+  --green: #9ece6a;
+  --light-orange: #e0af68;
+  --orange: #ff9e64;
+  --red: #f7768e;
+
+  /* --light: #d5d6db; */
+  /* --comments: #9699a3; */
+  /* --black: #0f0f14; */
+  /* --gold: #634f30; */
+  /* --text: #565a6e; */
+  /* --vars: #343b58; */
+  /* --purple: #5a4a78; */
+  /* --blue: #34548a; */
+  /* --dark-seal: #0f4b6e; */
+  /* --seal: #166775; */
+  /* --green: #33635c; */
+  /* --olive: #485e30; */
+  /* --orange: #8f5e15; */
+  /* --dark-orange: #965027; */
+  /* --red: #8c4351; */
+
   --dark: #03030a;
-  --darker-gray: #16161d;
-  --dark-gray: #202027;
-  --gray: #404047;
-  --light-gray: #606067;
-  --lighter-gray: #f0f0f7;
-  --light: #f6f6fd;
-  --red: #ff0064;
-  --dark-pink: #ff1d96;
-  --pink: #ff82ff;
-  --peach: #ff6573;
-  --orange: #ff8807;
-  --yellow: #eeff00;
-  --green: #00ff00;
-  --light-green: #9ffcbb;
+  /* --darker-gray: #16161d; */
+  /* --dark-gray: #202027; */
+  /* --gray: #404047; */
+  /* --light-gray: #606067; */
+  /* --lighter-gray: #f0f0f7; */
+  /* --red: #ff0064; */
+  /* --light: #f6f6fd; */
+  /* --dark-pink: #ff1d96; */
+  /* --pink: #ff82ff; */
+  /* --peach: #ff6573; */
+  /* --orange: #ff8807; */
+  /* --yellow: #eeff00; */
+  /* --green: #00ff00; */
+  /* --light-green: #9ffcbb; */
   --dark-blue: #0969f9;
-  --blue: #168eff;
-  --light-blue: #00e0ff;
-  --aqua: #00ffe5;
-  --dark-purple: #9a2dff;
-  --purple: #ef1fff;
+  /* --blue: #168eff; */
+  /* --light-blue: #00e0ff; */
+  /* --aqua: #00ffe5; */
+  /* --dark-purple: #9a2dff; */
+  /* --purple: #ef1fff; */
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--night);
+  color: var(--text);
 }
 
 h1,
@@ -39,6 +74,6 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--dark-blue);
+  color: var(--blue);
   font-weight: 600;
 }
