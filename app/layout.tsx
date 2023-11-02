@@ -13,7 +13,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       {/* <body className={montserrat.className}> */}
       <body className={inter.className}>
         <Navbar />
-        <main>{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </body>
     </html>
