@@ -1,26 +1,26 @@
 import Image from "next/image"
+import Gallery from "./_components/gallery"
 
 const HomePage = () => {
   return (
-    <main className="flex justify-center min-w-full mt-12 px-4 lg:px-0">
-      <div id="main-inner" className="max-w-5xl">
+    <section className="flex justify-center min-w-full mt-12 px-4 lg:px-0">
+      <div id="main-inner" className="max-w-6xl">
         <section id="intro">
           <div className="flex justify-center lg:justify-start w-full mt-8">
-            <h1 className="pb-1 text-2xl lg:text-3xl text-[--text] border-b-4 border-[--terminal-black]">
+            <h1 className="pb-1 text-3xl lg:text-4xl text-[--text] border-b-4 border-[--terminal-black]">
               Small Volume Milling
             </h1>
           </div>
 
           <div
             id="title-image"
-            className="flex place-items-center relative w-full mt-8 px-0 aspect-video overflow-hidden rounded-md z-[-1]"
+            className="flex place-items-center relative w-full mt-8 px-0 aspect-video overflow-hidden z-[-1]"
           >
             <Image
-              className="-translate-y-8 lg:-translate-y-20"
-              src="/bg.jpg"
+              className="object-cover rounded-lg -translate-y-8 lg:-translate-y-20"
+              src="/images/bg.jpg"
               alt="SVM Background"
-              width={1024}
-              height={768}
+              fill
               priority
             />
           </div>
@@ -79,8 +79,30 @@ const HomePage = () => {
           </div>
         </section>
 
+        <section id="gallery">
+          <div className="flex justify-center lg:justify-start w-full mt-16 pt-8 border-t border-[--storm]">
+            <h1 className="pb-1 text-2xl lg:text-3xl text-[--text] border-b-4 border-[--terminal-black]">
+              Our Work
+            </h1>
+          </div>
+          <Gallery />
+          <div className="flex justify-center w-full mt-8">
+            <a
+              href="/projects"
+              className="group rounded-lg px-4 py-2 border border-[--dark-blue] transition-colors hover:border-[--blue] hover:bg-slate-800/30"
+            >
+              <div>
+                More{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </div>
+            </a>
+          </div>
+        </section>
+
         <section id="clients">
-          <div className="flex justify-center w-full mt-8 pt-8 border-t border-[--storm]">
+          <div className="flex justify-center w-full mt-16 pt-8 border-t border-[--storm]">
             <h1 className="pb-1 text-2xl lg:text-3xl text-[--text] border-b-4 border-[--terminal-black]">
               Clients
             </h1>
@@ -126,7 +148,7 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-    </main>
+    </section>
   )
 }
 
